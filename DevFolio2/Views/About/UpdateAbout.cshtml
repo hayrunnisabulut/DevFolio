@@ -1,0 +1,19 @@
+﻿@model DevFolio2.Models.TblAbout
+
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkımda Güncelle</h2>
+
+<form method="post">
+    <label>About Id</label>
+    <input type="text" class="form-control" name="ServiceID" value="@Model.AboutID" />
+    <br />
+    <label>Hakkımda</label>
+    <input type="text" class="form-control" name="ServiceTitle" value="@Model.Description" />
+    <br />
+    <button class="btn btn-warning">Hakkımda Güncelle</button>
+
+</form>

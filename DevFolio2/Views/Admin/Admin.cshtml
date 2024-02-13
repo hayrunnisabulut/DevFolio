@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Admin Girişi</h2>
+
+<form method="post">
+    <label>id</label>
+    <input type="text" class="form-control" name="Id"/>
+    <br />
+    <label>Kullanıcı</label>
+    <input type="text" class="form-control" name="Username"  />
+    <br />
+    <label>Şifre</label>
+    <input type="text" class="form-control" name="Password" />
+    <br />
+    <a href="/Admin/Login/ class="btn btn-info"  onclick="Getit" >Giriş</a>
+
+</form>

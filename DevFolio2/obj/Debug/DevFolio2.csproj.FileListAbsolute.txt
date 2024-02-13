@@ -77,3 +77,7 @@ C:\Users\hayru\source\repos\DevFolio2\DevFolio2\obj\Debug\DevFolio2.csproj.CoreC
 C:\Users\hayru\source\repos\DevFolio2\DevFolio2\obj\Debug\DevFolio2.csproj.CopyComplete
 C:\Users\hayru\source\repos\DevFolio2\DevFolio2\obj\Debug\DevFolio2.dll
 C:\Users\hayru\source\repos\DevFolio2\DevFolio2\obj\Debug\DevFolio2.pdb
+C:\Users\hayru\source\repos\DevFolio2\DevFolio2\bin\EntityFramework.dll
+C:\Users\hayru\source\repos\DevFolio2\DevFolio2\bin\EntityFramework.SqlServer.dll
+C:\Users\hayru\source\repos\DevFolio2\DevFolio2\bin\EntityFramework.xml
+C:\Users\hayru\source\repos\DevFolio2\DevFolio2\bin\EntityFramework.SqlServer.xml

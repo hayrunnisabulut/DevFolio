@@ -6,15 +6,15 @@
 
 <h2>Yeni Proje Oluşturma Sayfası</h2>
 
-<label>Proje Başlığı</label>
-<input type="text" class="form-control" />
-<br />
-
-
-<label>Proje Kategorisi</label>
-<input type="text" class="form-control" />
-<br />
-<label>Proje Açıklaması</label>
-<textarea rows="5" class="form-control" ></textarea>
-<br />
-<button class="btn btn-info">Projeyi Kaydet</button>
+<form method="post">
+    <label>Proje Başlığı</label>
+    <input type="text" class="form-control" name="ProjectTitle" />
+    <br />
+    <label>Proje Kategorisi</label>
+    <input type="text" class="form-control" name="ProjectCategory" />
+    <br />
+    <label>Proje Tarihi</label>
+    <input type="text" class="form-control" name="CreateDate" />
+    <br />
+    <button class="btn btn-info">Projeyi Kaydet</button>
+</form>

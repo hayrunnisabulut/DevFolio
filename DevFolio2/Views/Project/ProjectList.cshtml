@@ -1,0 +1,33 @@
+﻿@model List<DevFolio2.Models.TblProject>
+
+@{
+    ViewBag.Title = "ProjectList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Proje Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Proje Adı</th>
+        <th>Proje Tarihi</th>
+        <th>Proje Kategorisi</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <th>@item.ProjectID</th>
+    <th>@item.ProjectTitle</th>
+    <th>@item.CreateDate</th>
+    <th>@item.ProjectCategory</th>
+    <th><a href="/Project/DeleteProject/@item.ProjectID" class="btn btn-danger">Sil</a></th>
+    <th><a href="/Project/UpdateProject/@item.ProjectID" class="btn btn-success">Güncelle</a></th>
+</tr>
+    }
+</table>
+
+<a href="/Project/CreateProject" class="btn btn-info">Yeni Hizmet Girişi</a>

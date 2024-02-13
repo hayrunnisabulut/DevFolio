@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DevFolio2.Models;
 
 namespace DevFolio2.Controllers
 {
     public class AboutController : Controller
     {
+        DbDevFolioEntities db = new DbDevFolioEntities();
         // GET: About
-        public ActionResult Index()
+        public ActionResult About()
         {
-            return View();
+            var values = db.TblAbout.ToList();
+            return View(values);
+        }
+
+        [HttpGet]
+        public ActionResult UpdateAbout(int id)
+        {
+            var value = db.TblAbout.Find(id);
+            return View(value);
         }
     }
 }

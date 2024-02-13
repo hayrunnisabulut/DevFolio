@@ -1,0 +1,33 @@
+﻿@model List<DevFolio2.Models.TblFeature>
+
+@{
+    ViewBag.Title = "FeatureList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Özellik Listesi</h2>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Özellik Başlığı</th>
+        <th>Özellik Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.FeatureID</th>
+            <th>@item.HeaderTitle</th>
+            <th>@item.HeaderDescription</th>
+            <th><a href="/Feature/DeleteFeature/@item.FeatureID" class="btn btn-danger">Sil</a></th>
+            <th><a href="/Feature/UpdateFeature/@item.FeatureID" class="btn btn-success">Güncelle</a></th>
+        </tr>
+    }
+
+</table>
+
+<a href="/Feature/CreateFeature" class="btn btn-info">Yeni Özellik Girişi</a>

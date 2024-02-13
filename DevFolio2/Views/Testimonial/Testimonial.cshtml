@@ -1,0 +1,36 @@
+﻿@model List<DevFolio2.Models.TblTestimonial>
+
+@{
+    ViewBag.Title = "Testimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Referanslar Listesi</h2>
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Referans Adı</th>
+        <th>Referans URL</th>
+        <th>Referans Yorumu</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <th>@item.TestimonialID</th>
+    <th>@item.NameSurname</th>
+    <th>@item.ImageUrl</th>
+    <th>@item.Description</th>
+    <th><a href="/Testimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-danger">Sil</a></th>
+    <th><a href="/Testimonial/UpdateTestimonial/@item.TestimonialID" class="btn btn-success">Güncelle</a></th>
+</tr>
+    }
+
+</table>
+
+<a href="/Testimonial/CreateTestimonial" class="btn btn-info">Yeni Referans Girişi</a>

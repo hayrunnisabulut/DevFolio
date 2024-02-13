@@ -1,0 +1,27 @@
+﻿@model DevFolio2.Models.TblProfile
+@{
+    ViewBag.Title = "UpdateProfile";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>UpdateProfile</h2>
+
+
+<form method="post">
+    <label>Profil Id</label>
+    <input type="text" class="form-control" name="ProfileID" value="@Model.ProfileID" />
+    <br />
+    <label>Ad Soyad</label>
+    <input type="text" class="form-control" name="NameSurname" value="@Model.NameSurname" />
+    <br />
+    <label>Başlık</label>
+    <input type="text" class="form-control" name="Title" value="@Model.Title" />
+    <br />
+    <label>Email</label>
+    <input type="text" class="form-control" name="Email" value="@Model.Email" />
+    <br />
+    <label>Telefon</label>
+    <input type="text" class="form-control" name="Phone" value="@Model.Phone" />
+    <br />
+    <button class="btn btn-warning">Projeyi Güncelle</button>
+</form>
