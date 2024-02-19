@@ -10,7 +10,17 @@ namespace DevFolio2.Controllers
     public class ProjectController : Controller
     {
         DbDevFolioEntities db = new DbDevFolioEntities();
-        // GET: Project
+
+        public void CategoryList() 
+        {
+            List<SelectListItem> items = new List<SelectListItem>();
+            foreach (var item in db.TblCategory.ToList())
+            {
+                items.Add(new SelectListItem { Text = item.CategoryName, Value = item.CategoryID.ToString() });
+            }
+            ViewBag.MovieType = items;
+        }
+
         public ActionResult ProjectList()
         {
             var values = db.TblProject.ToList();
@@ -20,12 +30,14 @@ namespace DevFolio2.Controllers
         [HttpGet]
         public ActionResult CreateProject()
         {
+            CategoryList();
             return View();
         }
 
         [HttpPost]
         public ActionResult CreateProject(TblProject p)
         {
+            p.ProjectCategory = SelectedItem();
             db.TblProject.Add(p);
             db.SaveChanges();
             return RedirectToAction("ProjectList");
@@ -42,6 +54,7 @@ namespace DevFolio2.Controllers
         [HttpGet]
         public ActionResult UpdateProject(int id)
         {
+            CategoryList();
             var value = db.TblProject.Find(id);
             return View(value);
         }
@@ -52,10 +65,15 @@ namespace DevFolio2.Controllers
             var value = db.TblProject.Find(s.ProjectID);
             value.ProjectTitle = s.ProjectTitle;
             value.CoverImageUrl = s.CoverImageUrl;
-            value.ProjectCategory = s.ProjectCategory;
+            value.ProjectCategory = SelectedItem();
             value.CreateDate = s.CreateDate;
             db.SaveChanges();
             return RedirectToAction("ProjectList");
+        }
+
+        public int SelectedItem()
+        {
+            return Convert.ToInt32(Request.Form["MovieType"].ToString());
         }
     }
 }

@@ -505,11 +505,11 @@
     <Content Include="Views\Default\PartialPortfolio.cshtml" />
     <Content Include="Views\Default\PartialTestimonial.cshtml" />
     <Content Include="Views\Contact\OpenMessage.cshtml" />
-    <Content Include="Templates\Hayrunnisa BulutCV.pdf" />
     <Content Include="Views\Default\PartialContact.cshtml" />
     <Content Include="Views\Default\PartialAddress.cshtml" />
     <Content Include="Views\AdminLayout\Dashboard.cshtml" />
     <Content Include="Views\Default\PartialSocial.cshtml" />
+    <Content Include="Templates\Hayrunnisa Bulut Resume .pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

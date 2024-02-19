@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "CreateProject";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
@@ -11,7 +10,9 @@
     <input type="text" class="form-control" name="ProjectTitle" />
     <br />
     <label>Proje Kategorisi</label>
-    <input type="text" class="form-control" name="ProjectCategory" />
+    <fieldset>
+        @Html.DropDownList("MovieType")
+    </fieldset>
     <br />
     <label>Proje Tarihi</label>
     <input type="text" class="form-control" name="CreateDate" />

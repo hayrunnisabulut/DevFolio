@@ -27,7 +27,7 @@ namespace DevFolio2.Controllers
         [HttpPost]
         public ActionResult UpdateAbout(TblAbout s)
         {
-            var value = db.TblAbout.Find(s.AboutID);
+            var value = db.TblAbout.Find(ViewBag.aboutId);
             value.Description = s.Description;
             db.SaveChanges();
             return RedirectToAction("About");

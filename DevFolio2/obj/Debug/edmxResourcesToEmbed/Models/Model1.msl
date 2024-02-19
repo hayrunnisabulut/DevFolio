@@ -134,5 +134,6 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <FunctionImportMapping FunctionImportName="GetLastSkillTitle" FunctionName="DbDevFolioModel.Store.GetLastSkillTitle" />
+    <FunctionImportMapping FunctionImportName="GetBestSkill" FunctionName="DbDevFolioModel.Store.GetBestSkill" />
   </EntityContainerMapping>
 </Mapping>

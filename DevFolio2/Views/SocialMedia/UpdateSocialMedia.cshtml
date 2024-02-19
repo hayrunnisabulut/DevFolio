@@ -15,9 +15,15 @@
     <label>Sosyal Medya İsmi</label>
     <input type="text" class="form-control" name="PlatformName" value="@Model.PlatformName" />
     <br />
-    <label>Status</label>
-    <input type="text" class="form-control" name="Status" value="@Model.Status" />
+    <label>Sosyal Medya İkon Url</label>
+    <input type="text" class="form-control" name="IconUrl" value="@Model.IconUrl" />
     <br />
-    <button class="btn btn-warning">Yeteneği Güncelle</button>
+    <label>Sosyal Medya Url</label>
+    <input type="text" class="form-control" name="RedirectUrl" value="@Model.RedirectUrl" />
+    <br />
+    <label>Status</label>
+    <input type="text" class="form-control" name="Status" value="@Model.Status.ToString()" />
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
 
 </form>

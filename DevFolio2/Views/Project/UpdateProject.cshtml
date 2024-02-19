@@ -18,7 +18,9 @@
     <input type="text" class="form-control" name="CreateDate" value="@Model.CreateDate" />
     <br />
     <label>Proje Kategorisi</label>
-    <input type="text" class="form-control" name="ProjectCategory" value="@Model.ProjectCategory" />
+    <fieldset>
+        @Html.DropDownList("MovieType", Model.TblCategory.CategoryName)
+    </fieldset>
     <br />
     <button class="btn btn-warning">Projeyi Güncelle</button>
 </form>

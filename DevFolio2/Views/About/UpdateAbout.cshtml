@@ -8,11 +8,9 @@
 <h2>Hakkımda Güncelle</h2>
 
 <form method="post">
-    <label>About Id</label>
-    <input type="text" class="form-control" name="AboutID" value="@Model.AboutID" />
+    <input hidden type="text" class="form-control" name="AboutID" value="@Model.AboutID" />
     <br />
-    <label>Hakkımda</label>
-    <input type="text" class="form-control" name="Description" value="@Model.Description" />
+    <textarea type="text" rows="5" class="form-control" name="Description">@Model.Description</textarea>
     <br />
     <button class="btn btn-warning">Hakkımda Güncelle</button>
 

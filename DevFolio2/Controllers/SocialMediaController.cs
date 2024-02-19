@@ -26,6 +26,7 @@ namespace DevFolio2.Controllers
         [HttpPost]
         public ActionResult CreateSocialMedia(TblSocialMedia s)
         {
+            s.Status = Convert.ToBoolean(s.Status);
             db.TblSocialMedia.Add(s);
             db.SaveChanges();
             return RedirectToAction("SocialMediaList");
@@ -42,9 +43,9 @@ namespace DevFolio2.Controllers
 
 
         [HttpGet]
-        public ActionResult UpdateSocialMedia(int s)
+        public ActionResult UpdateSocialMedia(int id)
         {
-            var value = db.TblSocialMedia.Find(s);
+            var value = db.TblSocialMedia.Find(id);
             return View(value);
         }
         [HttpPost]
@@ -56,7 +57,7 @@ namespace DevFolio2.Controllers
             value.RedirectUrl = s.RedirectUrl;
             value.Status = s.Status;
             db.SaveChanges();
-            return RedirectToAction("About");
+            return RedirectToAction("SocialMediaList");
         }
     }
 }

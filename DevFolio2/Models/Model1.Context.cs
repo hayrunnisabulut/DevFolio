@@ -45,5 +45,10 @@ namespace DevFolio2.Models
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("GetLastSkillTitle");
         }
+    
+        public virtual ObjectResult<string> GetBestSkill()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("GetBestSkill");
+        }
     }
 }

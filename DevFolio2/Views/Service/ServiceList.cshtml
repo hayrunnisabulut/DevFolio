@@ -11,6 +11,8 @@
     <tr>
         <th>#</th>
         <th>Hizmet Adı</th>
+        <th>Hizmet Resim Url</th>
+        <th>Açıklama</th>
         <th>Sil</th>
         <th>Güncelle</th>
     </tr>
@@ -20,6 +22,8 @@
         <tr>
             <th>@item.ServiceID</th>
             <th>@item.ServiceTitle</th>
+            <th>@item.ServiceImageUrl</th>
+            <th>@item.Description</th>
             <th><a href="/Service/DeleteService/@item.ServiceID" class="btn btn-danger">Sil</a></th>
             <th><a href="/Service/UpdateService/@item.ServiceID" class="btn btn-success">Güncelle</a></th>
         </tr>
