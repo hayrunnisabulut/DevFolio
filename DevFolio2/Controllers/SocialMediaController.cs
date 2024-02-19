@@ -47,5 +47,16 @@ namespace DevFolio2.Controllers
             var value = db.TblSocialMedia.Find(s);
             return View(value);
         }
+        [HttpPost]
+        public ActionResult UpdateSocialMedia(TblSocialMedia s)
+        {
+            var value = db.TblSocialMedia.Find(s.SocialMediaID);
+            value.PlatformName = s.PlatformName;
+            value.IconUrl = s.IconUrl;
+            value.RedirectUrl = s.RedirectUrl;
+            value.Status = s.Status;
+            db.SaveChanges();
+            return RedirectToAction("About");
+        }
     }
 }

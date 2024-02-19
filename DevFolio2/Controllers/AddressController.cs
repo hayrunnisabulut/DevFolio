@@ -23,5 +23,16 @@ namespace DevFolio2.Controllers
             var value = db.TblAddress.Find(id);
             return View(value);
         }
+        [HttpPost]
+        public ActionResult UpdateAddress(TblAddress s)
+        {
+            var value = db.TblAddress.Find(s.AddressID);
+            value.Description = s.Description;
+            value.Email = s.Email;
+            value.Location = s.Location;
+            value.PhoneNumber = s.PhoneNumber;
+            db.SaveChanges();
+            return RedirectToAction("AddressInfo");
+        }
     }
 }

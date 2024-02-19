@@ -1,0 +1,34 @@
+﻿@model DevFolio2.Models.TblContact
+
+@{
+    ViewBag.Title = "OpenMessage";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<h2>Mesaj İçeriği</h2>
+
+
+<form method="post">
+    <label>Mesaj Id</label>
+    <input type="text" class="form-control" name="ContactId" value="@Model.ContactId" />
+    <br />
+    <label>Ad Soyad</label>
+    <input type="text" class="form-control" name="NameSurname" value="@Model.NameSurname" />
+    <br />
+    <label>Konu</label>
+    <input type="text" class="form-control" name="Subject" value="@Model.Subject" />
+    <br />
+    <label>Mesaj</label>
+    <input type="text" class="form-control" name="Message" value="@Model.Message" />
+    <br />
+    <label>Email</label>
+    <input type="text" class="form-control" name="Email" value="@Model.Email" />
+    <br />
+    <label>Mesaj Gönderim Tarihi</label>
+    <input type="text" class="form-control" name="SendMessageDate" value="@Model.SendMessageDate" />
+    <br />
+    <button class="btn btn-warning">Geri</button>
+
+</form>
+

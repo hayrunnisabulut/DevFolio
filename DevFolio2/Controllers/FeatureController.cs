@@ -41,5 +41,16 @@ namespace DevFolio2.Controllers
             var value = db.TblFeature.Find(id);
             return View(value);
         }
+
+
+        [HttpPost]
+        public ActionResult UpdateFeature(TblFeature s)
+        {
+            var value = db.TblFeature.Find(s.FeatureID);
+            value.HeaderTitle = s.HeaderTitle;
+            value.HeaderDescription = s.HeaderDescription;
+            db.SaveChanges();
+            return RedirectToAction("FeatureList");
+        }
     }
 }

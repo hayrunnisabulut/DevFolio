@@ -45,5 +45,17 @@ namespace DevFolio2.Controllers
             var value = db.TblProject.Find(id);
             return View(value);
         }
+
+        [HttpPost]
+        public ActionResult UpdateProject(TblProject s)
+        {
+            var value = db.TblProject.Find(s.ProjectID);
+            value.ProjectTitle = s.ProjectTitle;
+            value.CoverImageUrl = s.CoverImageUrl;
+            value.ProjectCategory = s.ProjectCategory;
+            value.CreateDate = s.CreateDate;
+            db.SaveChanges();
+            return RedirectToAction("ProjectList");
+        }
     }
 }

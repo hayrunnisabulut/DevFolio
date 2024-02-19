@@ -1,8 +1,121 @@
-﻿
+﻿@model DevFolio2.Models.TblAdmin
 @{
     ViewBag.Title = "Login";
-    Layout = "~/Views/AdminLayout/Index.cshtml";
+    Layout = null;
 }
 
-<h2>Login</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[class="btn btn-info"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            button[class="btn btn-info"]:hover {
+                background-color: #45a049;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post">
+            <div>
+                <label for="username">Username:</label>
+                @Html.TextBoxFor(x => x.Username, new { @class = "form-control" })
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+            </div>
+            <div>
+                <button class="btn btn-info" onclick="Getit">Giriş</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+@*
+    <button type="submit" href="/Admin/Login/" class="btn btn-info" onclick="Getit">Giriş</button>
+    @{
+        ViewBag.Title = "Login";
+        Layout = "~/Views/AdminLayout/Index.cshtml";
+    }
+
+    <!doctype html>
+    <html lang="en">
+    <h2>Admin Girişi</h2>
+    <body>
+        <div class="wrapper d-flex align-items-stretch">
+
+            <form method="post">
+                <label>id</label>
+                <input type="text" class="form-control" name="Id" />
+                <br />
+                <label>Kullanıcı</label>
+                <input type="text" class="form-control" name="Username" />
+                <br />
+                <label>Şifre</label>
+                <input type="password" class="form-control" name="Password" />
+                <br />
+
+                <a href="/Admin/Login/" class="btn btn-info" onclick="Getit">Giriş</a>
+
+            </form>
+        </div>
+    </body>
+    </html>*@

@@ -1,0 +1,17 @@
+﻿@model List<DevFolio2.Models.TblAddress>
+
+@foreach (var item in Model)
+{
+
+    <div class="more-info">
+        <p class="lead">
+           @item.Description
+        </p>
+        <ul class="list-ico">
+            <li><span class="ion-ios-location"></span> @item.Location</li>
+            <li><span class="ion-ios-telephone"></span> @item.PhoneNumber</li>
+            <li><span class="ion-email"></span> @item.Email</li>
+        </ul>
+    </div>
+    
+}

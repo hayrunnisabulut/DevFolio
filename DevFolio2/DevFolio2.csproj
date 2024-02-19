@@ -252,6 +252,8 @@
     <Content Include="Templates\devfolio-master\css\style-red.css" />
     <Content Include="Templates\devfolio-master\css\style-sky-blue.css" />
     <Content Include="Templates\devfolio-master\css\style.css" />
+    <Content Include="Templates\devfolio-master\img\1694548010920.jfif" />
+    <Content Include="Templates\devfolio-master\img\2.png" />
     <Content Include="Templates\devfolio-master\img\apple-touch-icon.png" />
     <Content Include="Templates\devfolio-master\img\counters-bg.jpg" />
     <Content Include="Templates\devfolio-master\img\favicon.png" />
@@ -467,7 +469,6 @@
     <Content Include="Views\About\UpdateAbout.cshtml" />
     <Content Include="Views\Address\AddressInfo.cshtml" />
     <Content Include="Views\Address\UpdateAddress.cshtml" />
-    <Content Include="Views\Admin\Admin.cshtml" />
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Feature\FeatureList.cshtml" />
     <Content Include="Views\Feature\CreateFeature.cshtml" />
@@ -500,6 +501,15 @@
     <Content Include="Views\Default\PartialSkill.cshtml" />
     <Content Include="Views\Default\PartialAbout.cshtml" />
     <Content Include="Views\Default\PartialService.cshtml" />
+    <Content Include="Views\Default\PartialStatistic.cshtml" />
+    <Content Include="Views\Default\PartialPortfolio.cshtml" />
+    <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Contact\OpenMessage.cshtml" />
+    <Content Include="Templates\Hayrunnisa BulutCV.pdf" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialAddress.cshtml" />
+    <Content Include="Views\AdminLayout\Dashboard.cshtml" />
+    <Content Include="Views\Default\PartialSocial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

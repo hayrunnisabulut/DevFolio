@@ -23,11 +23,11 @@
     <th>@item.ProjectID</th>
     <th>@item.ProjectTitle</th>
     <th>@item.CreateDate</th>
-    <th>@item.ProjectCategory</th>
+    <th>@item.TblCategory.CategoryName</th>
     <th><a href="/Project/DeleteProject/@item.ProjectID" class="btn btn-danger">Sil</a></th>
     <th><a href="/Project/UpdateProject/@item.ProjectID" class="btn btn-success">Güncelle</a></th>
 </tr>
     }
 </table>
 
-<a href="/Project/CreateProject" class="btn btn-info">Yeni Hizmet Girişi</a>
+<a href="/Project/CreateProject" class="btn btn-info">Yeni Proje Girişi</a>

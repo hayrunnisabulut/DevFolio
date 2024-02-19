@@ -47,5 +47,17 @@ namespace DevFolio2.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult UpdateProfile(TblProfile s)
+        {
+            var value = db.TblProfile.Find(s.ProfileID);
+            value.NameSurname = s.NameSurname;
+            value.Phone = s.Phone;
+            value.Email = s.Email;
+            value.Title = s.Title;
+            db.SaveChanges();
+            return RedirectToAction("ProfileList");
+        }
+
     }
 }

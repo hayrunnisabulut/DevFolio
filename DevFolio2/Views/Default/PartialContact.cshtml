@@ -1,0 +1,47 @@
+﻿@model DevFolio2.Models.TblContact
+
+<div class="col-md-6">
+    <div class="title-box-2">
+        <h5 class="title-left">
+            Bize Mesaj Gönder
+        </h5>
+    </div>
+    <div>
+        @using (Html.BeginForm("Index", "Default", FormMethod.Post))
+        {
+            <form  method="post" role="form" class="contactForm">
+                <div id="sendmessage" class="@ViewBag.c">Mesajınız Gönderildi. Teşekkürler!</div>
+                <div id="errormessage"></div>
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control", id = "name", placeholder = "Adınız Soyadınız" })
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", id = "email", placeholder = "Email Adresiniz" })
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            @Html.TextBoxFor(x => x.Subject, new { @class = "form-control", id = "subject", placeholder = "Lütfen Konuyu Yazınız." })
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = "5", placeholder = "Lütfen bize bir şeyler yazın." })
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="button button-a button-big button-rouded">Gönder</button>
+                    </div>
+                </div>
+            </form>
+        }
+        </div>
+</div>

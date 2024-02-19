@@ -11,17 +11,19 @@ namespace DevFolio2.Controllers
     {
         DbDevFolioEntities db = new DbDevFolioEntities();
         // GET: Admin
-        public ActionResult Admin()
+        [HttpGet]
+        public ActionResult Login()
         {
             return View();
         }
 
-        public ActionResult Login()
+        [HttpPost]
+        public ActionResult Login(TblAdmin t)
         {
             var value = db.TblAdmin.Find(1);
-            if ("19PEACte" == value.Password)
+            if ("hb016523" == value.Username && "19PEACte" == value.Password)
             {
-                return RedirectToAction("Admin");
+                return RedirectToAction("Dashboard","AdminLayout");
             }
             else
             {

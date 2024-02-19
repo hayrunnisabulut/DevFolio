@@ -23,5 +23,14 @@ namespace DevFolio2.Controllers
             var value = db.TblAbout.Find(id);
             return View(value);
         }
+
+        [HttpPost]
+        public ActionResult UpdateAbout(TblAbout s)
+        {
+            var value = db.TblAbout.Find(s.AboutID);
+            value.Description = s.Description;
+            db.SaveChanges();
+            return RedirectToAction("About");
+        }
     }
 }

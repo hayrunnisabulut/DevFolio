@@ -1,0 +1,19 @@
+﻿@model List<DevFolio2.Models.TblTestimonial>
+
+<div id="testimonial-mf" class="owl-carousel owl-theme">
+    @foreach (var item in Model)
+    {
+        <div class="testimonial-box">
+            <div class="author-test">
+                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">@item.NameSurname</span>
+            </div>
+            <div class="content-test">
+                <p class="description lead">
+                    @item.Description
+                </p>
+                <span class="comit"><i class="fa fa-quote-right"></i></span>
+            </div>
+        </div>
+    }
+</div>

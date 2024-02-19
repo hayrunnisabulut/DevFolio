@@ -1,28 +1,43 @@
-﻿
+﻿@model List<DevFolio2.Models.TblContact>
+
 @{
-    Layout = null;
+    ViewBag.Title = "MessageList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-<br />
-<div class="container">
-    <table class="table table-bordered">
+
+
+
+
+<h2>Gelen Mesajlar Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen</th>
+        <th>Konu</th>
+        <th>Email</th>
+        <th>Okundu Bilgisi</th>
+        <th>Mesajı Aç</th>
+        <th>Sil</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        var okundumu = "Okunmadı"; 
+        if (item.IsRead == true)
+        {
+            okundumu = "Okundu";
+        }
         <tr>
-            <th>Mesaj No</th>
-            <th>Gönderen</th>
-            <th>Konu</th>
-            <th>Mesajı Aç</th>
+            <th>@item.ContactId</th>
+            <th>@item.NameSurname</th>
+            <th>@item.Subject</th>
+            <th>@item.Email</th>
+            <th>
+                @okundumu
+            </th>
+            <th><a href="/Contact/OpenMessage/@item.ContactId" class="btn btn-success">Mesajı Aç</a></th>
+            <th><a href="/Contact/DeleteMessage/@item.ContactId" class="btn btn-danger">Sil</a></th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Murat Sağlam</td>
-            <td>Teşekkür</td>
-            <td><a href="#" class="btn btn-warning">Mesajı Aç</a></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Kemal Kibar</td>
-            <td>Şikayet</td>
-            <td><a href="#" class="btn btn-warning">Mesajı Aç</a></td>
-        </tr>
-    </table>
-</div>
+    }
+</table>

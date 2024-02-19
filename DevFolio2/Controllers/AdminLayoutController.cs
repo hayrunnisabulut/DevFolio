@@ -14,6 +14,11 @@ namespace DevFolio2.Controllers
             return View();
         }
 
+        public PartialViewResult Dashboard()
+        {
+            return PartialView();
+        }
+
         public PartialViewResult HeadPartial()
         {
             return PartialView();
@@ -32,5 +37,6 @@ namespace DevFolio2.Controllers
         {
             return PartialView();
         }
+
     }
 }

@@ -1,13 +1,14 @@
 ﻿@model List<DevFolio2.Models.TblSkill>
 
-@foreach (var item in Model)
-{
+
 <div class="skill-mf">
     <p class="title-s">Skill</p>
-    <span>@item.SkillTitle</span> <span class="pull-right">@item.SkillValue%</span>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: @item.SkillValue%;" aria-valuenow="@item.SkillValue" aria-valuemin="0"
-             aria-valuemax="100"></div>
-    </div>
-</div>}
+    @foreach (var item in Model)
+    {
+<span>@item.SkillTitle</span> <span class="pull-right">@item.SkillValue%</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: @item.SkillValue%;" aria-valuenow="@item.SkillValue" aria-valuemin="0"
+                         aria-valuemax="100"></div>
 
+                </div>}
+</div>
