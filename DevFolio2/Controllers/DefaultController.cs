@@ -77,7 +77,7 @@ namespace DevFolio2.Controllers
         }
 
         [HttpPost]
-        public PartialViewResult PartialContact(TblContact v)
+        public JsonResult PartialContact(TblContact v)
         {
             db.TblContact.Add(v);
             v.IsRead = false;
@@ -85,7 +85,7 @@ namespace DevFolio2.Controllers
             db.SaveChanges();
             ViewBag.m = "okey";
             ViewBag.c = "show";
-            return PartialView();
+            return Json("Mesajınız Gönderildi");
         }
 
         public PartialViewResult PartialAddress()
