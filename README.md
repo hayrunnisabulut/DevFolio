@@ -5,11 +5,11 @@ MY Yazılım Danışmanlık Akademisi bünyesinde geliştirmiş olduğum ilk pro
 - MVC
 - Asp.Net Framework (C#)
 - Nesne Tabanlı Yazılım (OOP)
--DbFirst 
--EntityFramework
--HTML/CSS/Bootstrap/JS
--MSSql
--ORM
+- DbFirst 
+- EntityFramework
+- HTML/CSS/Bootstrap/JS
+- MSSql
+- ORM
 
 ## ER Diagram
 
