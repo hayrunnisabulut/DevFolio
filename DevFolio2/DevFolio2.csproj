@@ -256,9 +256,12 @@
     <Content Include="Templates\devfolio-master\img\2.png" />
     <Content Include="Templates\devfolio-master\img\apple-touch-icon.png" />
     <Content Include="Templates\devfolio-master\img\counters-bg.jpg" />
+    <Content Include="Templates\devfolio-master\img\ela.PNG" />
     <Content Include="Templates\devfolio-master\img\favicon.png" />
+    <Content Include="Templates\devfolio-master\img\hayrunnisa.PNG" />
     <Content Include="Templates\devfolio-master\img\intro-bg - Copy.jpg" />
     <Content Include="Templates\devfolio-master\img\intro-bg.jpg" />
+    <Content Include="Templates\devfolio-master\img\irem.PNG" />
     <Content Include="Templates\devfolio-master\img\overlay-bg.jpg" />
     <Content Include="Templates\devfolio-master\img\post-1.jpg" />
     <Content Include="Templates\devfolio-master\img\post-2.jpg" />

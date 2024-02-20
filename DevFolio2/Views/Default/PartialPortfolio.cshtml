@@ -6,16 +6,16 @@
     {
         <div class="col-md-4">
             <div class="work-box">
-                <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+                <a href="/Templates/devfolio-master/img/work-1.jpg" data-lightbox="gallery-mf">
                     <div class="work-img">
-                        <img src="img/work-1.jpg" alt="" class="img-fluid">
+                        <img src="/Templates/devfolio-master/img/work-1.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="work-content">
                         <div class="row">
                             <div class="col-sm-8">
                                 <h2 class="w-title">@item.ProjectTitle</h2>
                                 <div class="w-more">
-                                    <span class="w-ctegory">@item.TblCategory.CategoryName</span> / <span class="w-date">18 Sep. 2018</span>
+                                    <span class="w-ctegory">@item.TblCategory.CategoryName</span> / <span class="w-date">@(((DateTime)item.CreateDate).ToString("dd MMM yyyy"))</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
