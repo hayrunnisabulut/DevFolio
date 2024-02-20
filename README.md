@@ -11,6 +11,7 @@ MY Yazılım Danışmanlık Akademisi bünyesinde geliştirmiş olduğum ilk pro
 - MSSql
 - ORM
 
-## ER Diagram
+## ER Diagram 📊
+![image](https://github.com/hayrunnisabulut/DevFolio/assets/95770965/1fda3f4f-2073-433a-9d4e-1576e53e62a0)
 
 
