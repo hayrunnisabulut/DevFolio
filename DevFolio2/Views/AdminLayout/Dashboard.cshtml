@@ -4,4 +4,80 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Merhaba, Portfolya Admin Paneline Hoşgeldiniz !</h2>
+<h2>Merhaba, Portfolyo Admin Paneline Hoşgeldiniz !</h2>
+<br />
+<div class="row">
+    <div id="card" class="col-md-6 col-xl-3">
+        <div class="card bg-warning border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h2 class="card-title mb-0 text-white" style="color:darkorchid">Gelen Kutusu</h2>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h4 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.gelenKutusu okunmamış mesajınız bulunmaktadır!
+                        </h4>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h6 class="d-flex align-items-center mb-0 text-white">
+                            <a style="color:darkorchid" href="/Contact/MessageList">Mesajlara Git</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="card" class="col-md-8 col-xl-4">
+        <div class="card bg-warning border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h2 class="card-title mb-0 text-white" style="color:darkorchid">Son Proje Tarihi</h2>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h4 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.sonprojetarihi tarihinden beri yeni proje eklemedin!
+                        </h4>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h6 class="d-flex align-items-center mb-0 text-white">
+                            <a style="color:darkorchid" href="/Project/CreateProject">Yeni Proje Ekle</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="card" class="col-md-6 col-xl-3">
+        <div class="card bg-warning border-primary">
+            <div class="card-body">
+                <div class="mb-5">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h2 class="card-title mb-0 text-white" style="color:darkorchid">Referans Sayısı</h2>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h4 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.referans adet referansın var!
+                        </h4>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h6 class="d-flex align-items-center mb-0 text-white">
+                            <a style="color:darkorchid" href="/Testimonial/CreateTestimonial">Yeni Referans Ekle</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
