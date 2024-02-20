@@ -4,15 +4,191 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
+<style>
+    .card {
+        margin-bottom:10px
+    }
+</style>
 
-<div class="alert alert-danger">1) Kategori Sayısı : @ViewBag.categoryCount</div>
-<div class="alert alert-warning">2) Proje Sayısı : @ViewBag.projectCount</div>
-<div class="alert alert-success">3) Yetenek Sayısı : @ViewBag.skillCount</div>
-<div class="alert alert-dark">4) Ortalama Yetenek Puanı : @ViewBag.skillAvgValue</div>
-<div class="alert alert-primary">5) Son Yetenek Başlığı : @ViewBag.lastSkillTitle</div>
-<div class="alert alert-danger">6) Core Kategorisindeki Proje Sayısı : @ViewBag.coreCategoryProjectCount</div>
-<div class="alert alert-warning">7) En İyi Olduğum Hizmet : @ViewBag.eniyihizmet</div>
-<div class="alert alert-success">8) Hakkımda Kelime Sayısı : @ViewBag.hakkimdakelimesayisi</div>
-<div class="alert alert-dark">9) Sosyal Medya Sayısı : @ViewBag.sosyalMedyaSayisi</div>
-<div class="alert alert-primary">10) Okunmayan Mesaj Sayısı : @ViewBag.okunmayanmesajlar</div>
+﻿<div class="row">
+    <div id="card" class="col-md-6 col-xl-3">
+        <div class="card bg-primary border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Son Yetenek Başlığı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-6">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.lastSkillTitle
+                        </h2>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-secondary border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">En İyi Olduğum Hizmet</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.eniyihizmet
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-success border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Hakkımda Kelime Sayısı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.hakkimdakelimesayisi
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-info border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Sosyal Medya Sayısı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.sosyalMedyaSayisi
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-warning border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Okunmayan Mesaj Sayısı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.okunmayanmesajlar
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-danger border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Ortalama Yetenek Puanı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.skillAvgValue
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-dark border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Kategori Sayısı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.CategoryCount
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-primary border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Proje Sayısı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.projectCount
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-secondary border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">Yetenek Sayısı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.skillCount
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-success border-primary">
+            <div class="card-body">
+                <div class="mb-3">
+                    <span class="badge badge-soft-light float-right"></span>
+                    <h5 class="card-title mb-0 text-white">.Net Proje Sayısı</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center mb-0 text-white">
+                            @ViewBag.netCategoryProjectCount
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
