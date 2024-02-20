@@ -22,7 +22,7 @@
 <tr>
     <th>@item.ProjectID</th>
     <th>@item.ProjectTitle</th>
-    <th>@item.CreateDate</th>
+    <th>@(((DateTime)item.CreateDate).ToString("dd.MM.yyyy"))</th>    
     <th>@item.TblCategory.CategoryName</th>
     <th><a href="/Project/DeleteProject/@item.ProjectID" class="btn btn-danger">Sil</a></th>
     <th><a href="/Project/UpdateProject/@item.ProjectID" class="btn btn-success">Güncelle</a></th>

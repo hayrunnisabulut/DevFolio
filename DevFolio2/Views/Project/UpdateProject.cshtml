@@ -15,12 +15,25 @@
     <input type="text" class="form-control" name="ProjectTitle" value="@Model.ProjectTitle" />
     <br />
     <label>Proje Tarihi</label>
-    <input type="text" class="form-control" name="CreateDate" value="@Model.CreateDate" />
+    <input type="text" class="form-control" name="CreateDate" value="@(((DateTime)Model.CreateDate).ToString("dd.MM.yyyy"))" />
     <br />
     <label>Proje Kategorisi</label>
-    <fieldset>
-        @Html.DropDownList("MovieType", Model.TblCategory.CategoryName)
-    </fieldset>
+    <br />
+    <select name="plan" id="plan" class="form-control">
+        @foreach (var item in ViewBag.Category_List)
+        {
+            if (@item.Text == Model.TblCategory.CategoryName)
+            {
+                <option value="@item.Value" selected>@item.Text</option>
+            }
+            else
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+
+        }
+    </select>
+    <br />
     <br />
     <button class="btn btn-warning">Projeyi Güncelle</button>
 </form>
