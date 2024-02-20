@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.34301.259
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFolio2", "DevFolio2\DevFolio2.csproj", "{E01C57AB-3C99-4B77-8F4F-A95FDCE700DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFolio", "DevFolio2\DevFolio.csproj", "{E01C57AB-3C99-4B77-8F4F-A95FDCE700DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
