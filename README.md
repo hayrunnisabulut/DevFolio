@@ -21,5 +21,9 @@ MY Yazılım Danışmanlık Akademisi bünyesinde geliştirmiş olduğum ilk pro
 https://github.com/hayrunnisabulut/DevFolio/assets/95770965/8ef0ea2c-d70c-4ce5-93fd-47ab3f968a0d
 
 
+https://github.com/hayrunnisabulut/DevFolio/assets/95770965/3b759b2c-ec55-4538-bcdf-df7431efd06d
+
+
+
 
 ## Admin Paneli 👀
