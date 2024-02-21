@@ -22,6 +22,7 @@ https://github.com/hayrunnisabulut/DevFolio/assets/95770965/8ef0ea2c-d70c-4ce5-9
 
 
 https://github.com/hayrunnisabulut/DevFolio/assets/95770965/3b759b2c-ec55-4538-bcdf-df7431efd06d
+![svg](https://github.com/hayrunnisabulut/DevFolio/assets/95770965/2da3a3fb-1f6d-4b42-bd45-6a253819b28e)
 
 
 
