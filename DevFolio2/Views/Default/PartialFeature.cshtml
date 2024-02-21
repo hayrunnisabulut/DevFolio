@@ -1,23 +1,18 @@
 ﻿@model List<DevFolio2.Models.TblFeature>
 
-<style>
-    .bg-image {
-        opacity: 80%
-    }
-</style>
 @foreach (var item in Model)
 {
-    <div id="home" class="intro route bg-image" style="background-image: url(/Templates/devfolio-master/img/2.png)">
-        <div class="overlay-itro"> </div>
-        <div class="intro-content display-table">
-            <div class="table-cell">
-                <div class="container">
-                    <!-- <p class="display-6 color-d" > Hello, world!</p >-->
-                    <h1 class="intro-title mb-4">@item.HeaderTitle </h1>
-                    <p class="intro-subtitle"> <span class="text-slider-items">@item.HeaderDescription </span> <strong class="text-slider"> </strong> </p>
-                    <!-- <p class="pt-3" > <a class="btn btn-primary btn js-scroll px-4" href="#about" role="button" > Learn More</a > </p > -->
-                </div>
+<div id="home" class="intro route bg-image" style="background-image: url(/Templates/devfolio-master/img/photo-1509803874385-db7c23652552.jpg)">
+    <div class="overlay-itro"> </div>
+    <div class="intro-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <!-- <p class="display-6 color-d" > Hello, world!</p >-->
+                <h1 class="intro-title mb-4">@item.HeaderTitle </h1>
+                <p class="intro-subtitle"> <span class="text-slider-items">@item.HeaderDescription </span> <strong class="text-slider"> </strong> </p>
+                <!-- <p class="pt-3" > <a class="btn btn-primary btn js-scroll px-4" href="#about" role="button" > Learn More</a > </p > -->
             </div>
         </div>
     </div>
+</div>
 }
