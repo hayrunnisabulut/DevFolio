@@ -24,7 +24,10 @@ https://github.com/hayrunnisabulut/DevFolio/assets/95770965/11d43683-87ff-4d0c-b
 
 ## Portfolyo Sitesi 💻
 
-https://github.com/hayrunnisabulut/DevFolio/assets/95770965/8ef0ea2c-d70c-4ce5-93fd-47ab3f968a0d
+
+
+https://github.com/hayrunnisabulut/DevFolio/assets/95770965/f7295eda-7241-4dbe-b782-6debdf00e5fc
+
 
 
 ![localhost_44370_Default_Index (2)](https://github.com/hayrunnisabulut/DevFolio/assets/95770965/39121480-27e3-443e-9b8f-f794af86ebb7)
